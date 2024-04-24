@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Survey</title>
+</head>
+<body>
+    <form action="submit-your-data-url"
+    method="post">
+        <fieldset>
+            <legend>Waste Management Survey Form</legend>
+            <label for="name">name:</label>
+            <input type="text" id="name"name= required/>
+            <label for="email">Email:</label>
+            <input type="email" id="email"name="email" required/>
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob"name="dob" required/>
+            <label
+            for="occupation">Occupation:</label>
+                    <input type="text" id="occupation"name="occupation" required/>
+                    <label for="view-on-tech">your view on using technology to manage waste issues:</label>
+                    <textarea id="view_on_tech" rows="4" required></textarea>
+
+                    <label
+                    for="garbage-collection-day">Preferred garbage collecton day:</label>
+                                 <select id="garbage-collection-day"name="garbage-collection-day">
+                                    <option value="Monday">Monday</option>
+                                    <option value="Tuesday">Tuesday</option>
+                                    <option value="Wednesday">Wednesday</optiion>
+                                    <option value="Thursday">Thurday</option>
+                                    <option value="Friday">Friday</option>
+                                    <option value="Saturday">Saturday</option>
+                                    <option value="Sunday">Sunday</option>
+                                    </select>
+                                    <fieldset>
+                                        <legend>Technological solutions for waste management:</legend>
+                                        <ol>
+                                            <li><input type="radio"
+                    id="solution1" name="solution"
+                    value="Mobile app for waste pickup scheduleing"><label for="solution1">
+                        Mobile app foe waste pickup scheduling</label></li>
+                                               <li><input type="radio"
+                                                id="solution2" name="solution" value="IoT bins that notify when full"><label for="solution2">
+                                                    IoT bins that notify when full
+                                                </label></li>
+                                                <li><input type="radio"id="solution3" name="solution"value="community recycling incentives"><label for="solution3">Community recycling incentives</label></li>
+                                                </ol>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                    <legend>Additional information:</legend>
+                                                    <input type="checkbox"
+                                                    id="news-updates" name="news_updates">
+                                                    <label for="news updates">would like to recieve news and updates about waste management efforts</label><br>
+
+                                                    <input type="checkbox"id="volunteer" name="volunteer">
+                                                                     <label for="volunteer">i am interested in volunteering for community clean-up initiatives</label>
+                                                </fieldset>
+
+                                                <button type="submit">Submit</button>
+                                                          <button type="reset">Cancel</button>
+                                                          </fieldset>
+     </form>               
+                                    
+</body>
+</html>
